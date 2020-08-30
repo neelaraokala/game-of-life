@@ -8,7 +8,7 @@ pipeline {
             steps {
                     git branch: 'master',
                         credentialsId: 'github',
-                        url: 'your-github-repo.git'
+                        url: 'https://github.com/neelaraokala/game-of-life.git'
                }
         }
         stage("Docker Build") {
