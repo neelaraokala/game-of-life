@@ -1,0 +1,41 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gameoflife-svc
+  labels:
+    app: gameoflife
+spec:
+  ports:
+    - port: 3306
+  selector:
+    app: gameoflife
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gameoflife-deploy
+  labels:
+    app: gameoflife
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: gameoflife
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: gameoflife
+    spec:
+      containers:
+        - image: <give_the_address_or_id_of_ECR_registry>
+          name: gameoflife
+          ports:
+            - containerPort: 9090
+              
