@@ -12,6 +12,15 @@ The application is a very simple online version of [Conway's 'game of life'](htt
 
 The acceptance tests are written using Webdriver and [Serenity (previously known as 'Thucydides')](http://thucydides.info). They are designed to run against a running server. Run the jetty instance as described about, then, in another window, go to the gameoflife-acceptance-tests directory and run `mvn clean verify`. The test reports will be generated in the `target/site/thucydides` directory.
 
+## Registry Creation in AWS and pushing image to AWS Elastic Container Registry
+1.Create Registry in AWS following instructions from [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_GetStarted.html)
+2.Install AWS-CLI on the machine by following instructions from [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) and create the iam user refer [here](https://serverless-stack.com/chapters/create-an-iam-user.html)
+
+## Create an EKS Cluster and use the Elastic Container Registry
+1.Create an eks cluster by following instructions from [here](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html)
+2.using eksctl cli to create the cluster
+3.Install eksctl by following instructions from [here](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html#installing-eksctl)
+
 ## The book
 
 Streamline software development with Jenkins, the popular Java-based open source tool that has revolutionized the way teams think about Continuous Integration (CI). This complete guide shows you how to automate your build, integration, release, and deployment processes with Jenkins—and demonstrates how CI can save you time, money, and many headaches.
