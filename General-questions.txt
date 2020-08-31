@@ -1,0 +1,70 @@
+## What is the role of AWS/Azure/GCP in DevOps?
+Now a days Cloud (AWS/AZURE/GCP) is helping a lot to the to the maintain the business needs.
+Cloud computing is enables users to create self-service methods for provisioning infrastructure through AWS/AZURE/GCP. DevOps engineers are able to quickly try new things, fail fast and just easily succeed in getting new products to market faster, without having to wait for IT operations to provision services for them.
+
+DevOps as a single term is really a mixture of these approaches, in which developers and operations work together using the cloud as a single common language. In this way, both the DevOps and cloud are able to work together
+1.	Bring products to market faster through faster access to development environments and streamlined developer processes.
+2.	Automation and architecture as code reduce cloud complexity and even system maintenance.
+3.	Add high security with automated, repeatable processes that serve to eliminate inaccurate error and, even more importantly, develop security controls from the very beginning.
+4.	Reduce downtime through cloud-based continuous operations. Moreover, in the process of applying automation, developers can build stateless cloud based application development, which increases availability and failover ability, in the process increasing business reliability and customer satisfaction.
+5.	Increase scalability. One of the main reason organizations look to cloud computing in the first place is its scalability, which allows organizations to increase capacity with the click of a button. When combined with DevOps, scalability becomes an integral part of applications as they are developed, while reducing the cost of infrastructure and increasing global reach.
+6.	By using cloud services you can host your application in Virtualised atmosphere rather than go to on premises.
+
+## How will you approach a project that needs to implement DevOps?
+
+Any project that need to start with a Planning phase.
+1.	Planning phase:  before starting the project, a Project meting will go on, to discuss regarding the project needs, customer requirements and sprint duration and the dead-lines.
+2.	 After that starting of the project execution process developers write a code and then submits code to the Version control system.
+FROM HERE ONWARDS DEVOPS ENGINNER ROLE IS STARTS
+3.	DevOps engineer clone the code from the VCS (Version Control System) then starts Compiling the code and then build the code using a language-based build tools like MAVEN, MSBUILD etc.
+4.	After packaging is done, he is responsible to create a testing-environments and then need to deploy the package to the respective testing environments. 
+5.	And also he is responsible for the code coverage testing.
+6.	After that as DevOps Engineer you are responsible for archiving the build results for that he sends build package to the Artifactory.
+7.	 And then you have to deploy the application.
+
+On simple note, as DevOps Engineer, you are responsible
+•	to build the code 
+•	running the tests 
+•	 archiving the build results 
+•	and deploy the package to different environments to the testing the application functions 
+•	then after delivering the application is DevOps engineer responsible.
+
+## Mention some of the core benefits of DevOps.
+ 
+•	Improves Speed and Stability of Software Development and Deployment
+•	Maximizes Efficiency with Automation
+•	Optimizes the Entire Business and reaources
+•	Productivity and cost Reduction
+•	Velocity
+
+## What are the different phases in DevOps?
+
+•	Continuous Development 
+•	Continuous Integration
+•	Continuous Testing
+•	Continuous Monitoring
+•	Continuous Feedback
+•	Continuous Deployment
+•	Continuous Monitoring
+
+## Explain the concept of branching in Git.
+
+•	A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master.
+•	In Git, branches are a part of your everyday development process. 
+•	Git branches are effectively a pointer to a snapshot of your changes.
+•	 When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes.
+•	You can create, delete and merge the new branches.
+•	And every organization follows its own BRANCHING STRATEGY.
+
+## What is a merge conflict in Git, and how can it be resolved?
+
+In every situation where work can be parallelized, work will eventually overlap. Sometimes two developers will change the same line of code in two different ways; in such a case, Git can't tell which version is correct—that's something only a developer can decide.
+•	Let’s Assume
+Both Developer A and Developer B are working on the same files and they decide to update the remote repository.
+•	Developer B pushes the code to Remote Repository and Developer A push will fail, he needs to get the latest version and when he tries to pull he gets merge conflict
+•	To Solve the Merge-conflict the developer B needs to go the file and need to check, in which line is merge-conflict happen, and resolves manually.
+
+
+
+
+
