@@ -1,0 +1,23 @@
+## What is DDoS attack? How do you deal with it?
+## What are the benefits of having Policy management?
+## How HTTPS is different from HTTP?
+
+•	In HTTP, URL begins with “http://” whereas URL starts with https://
+•	HTTP uses port number 80 for communication and HTTPS uses 443
+•	HTTP is considered to be unsecure and HTTPS is secure
+•	In HTTP, Encryption is absent and Encryption is present in HTTPS
+
+## What TCP and UDP vulnerabilities are you familiar with?
+## What types of firewalls are there?
+•	Application gateway 
+•	Network Security Rules
+•	VPN Gateway
+
+## Explain OAuth
+
+•	OAuth is about authorization and not authentication
+•	Authorization is asking for permission to do stuff
+•	Authentication is about proving you are the correct person because you know things.
+•	OAuth doesn’t pass authentication data between consumers and service providers – but instead acts as an authorization token of sorts.
+
+
